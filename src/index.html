@@ -11,18 +11,26 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
+    <script src="/src/app.js"></script>
   </head>
   <body>
     <div class="container-fluid text-center">
       <h1 class="mt-5">Hello Rigo!</h1>
       <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
+      <p class="alert alert-danger mt-4">
+        Ringo is generating domain names to help your poor creativity
       </p>
+      <div class="container-fluid text-center">
+        <button class="btn btn-primary" onclick="generate()">
+          Generate domain name
+        </button>
+        <div class="container-fluid text-center displayresult">
+          <h3 id="DomainName"></h3>
+        </div>
+      </div>
       <div class="fixed-bottom p-4">
         Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+        <a href="https://github.com/Mov1ux">Mov1ux</a>
       </div>
     </div>
   </body>
